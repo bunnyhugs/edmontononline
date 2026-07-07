@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edmonton Online | Affordable Web Services</title>
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --border: #e5e7eb;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+
+    header {
+      padding: 32px 0 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 800;
+    }
+
+    .hero {
+      display: grid;
+      gap: 24px;
+      padding: 40px 0 48px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 4vw, 4rem);
+      line-height: 0.95;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: #1d4ed8;
+      font-weight: 600;
+      max-width: fit-content;
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      flex: 1;
+    }
+
+    .section {
+      margin-top: 48px;
+      padding: 32px 0;
+      background: white;
+      border-radius: 28px;
+      border: 1px solid var(--border);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.65rem;
+    }
+
+    .section p {
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .list {
+      margin: 24px 0 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .list li {
+      margin-bottom: 12px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      gap: 10px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .cta:hover {
+      background: var(--primary-hover);
+    }
+
+    footer {
+      margin: 56px 0 0;
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        padding: 20px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <span class="brand-mark">EO</span>
+        Edmonton Online
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="badge">Non-profit society</div>
+      <h1>Affordable web services, education, and support for individuals and small organizations.</h1>
+      <p>Edmonton Online helps members access free and low-cost email, hosting, secure browsing, web development, training, and more. Our goal is to increase accessibility and inclusivity in technology and the internet.</p>
+    </section>
+
+    <section class="grid cards">
+      <article class="card">
+        <h3>What we offer</h3>
+        <p>Free and low-cost web services, including email, hosting, secure browsing, end-to-end encryption, and web development. We also provide guidance for members who want to manage their own services.</p>
+      </article>
+      <article class="card">
+        <h3>Who can join</h3>
+        <p>Private individuals, small businesses, and small non-profit organizations are welcome. We prioritize accessibility so everyone can participate regardless of background or situation.</p>
+      </article>
+      <article class="card">
+        <h3>Membership model</h3>
+        <p>Membership is pay-what-you-can, including $0. We suggest a contribution of $20 per year, and applications are reviewed by our board of directors.</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Our mandate</h2>
+      <p>We provide affordable web services to members and work to ensure technology is accessible. Our mandate includes making email, hosting, encryption, and web development available to all while building understanding and capability through education.</p>
+      <ul class="list">
+        <li>Accessible web services for individuals and small organizations</li>
+        <li>Support for self-managed services and technical education</li>
+        <li>Inclusive technology access for all backgrounds and situations</li>
+        <li>Community-focused, affordable membership</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Join Edmonton Online</h2>
+      <p>To become a member, complete a member application form. Our board of directors will review each application and aim to make web services available to those who need them.</p>
+      <a class="cta" href="#membership">Apply now</a>
+    </section>
+
+    <footer>
+      <p>Edmonton Online is a non-profit society dedicated to affordable and inclusive web services.</p>
+    </footer>
+  </div>
+</body>
+</html>
